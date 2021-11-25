@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane dividerPositions="0.004098360655737705" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="857.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ihm.FirstWindowController">
+  <items>
+      <AnchorPane fx:id="confirtmButton" minHeight="314.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <VBox alignment="CENTER" layoutX="200.0" layoutY="3.0" prefHeight="400.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="rulesButton" minHeight="24.0" minWidth="100.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="100.0" text="Rules" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Players name" textAlignment="CENTER" wrappingWidth="136.13671875">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Put &quot;fake&quot; for AI player" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="80.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="50.0" top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Color" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Button fx:id="confirmButton" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Confirm" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="continueButton" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="144.0" text="Continue game" textAlignment="CENTER" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutY="3.0" prefHeight="400.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Player 1" textAlignment="CENTER" />
+                  <TextField fx:id="p1NameField" minHeight="25.0" minWidth="150.0" prefHeight="25.0" prefWidth="150.0">
+                     <VBox.margin>
+                        <Insets bottom="50.0" top="25.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <ComboBox fx:id="comboColorP1" prefWidth="150.0" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="400.0" layoutY="3.0" prefHeight="400.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Player 2" textAlignment="CENTER" />
+                  <TextField fx:id="p2NameField" minHeight="25.0" minWidth="150.0" prefHeight="25.0" prefWidth="150.0">
+                     <VBox.margin>
+                        <Insets bottom="50.0" top="25.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <ComboBox fx:id="comboColorP2" prefWidth="150.0" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox layoutX="38.0" layoutY="51.0" prefHeight="201.0" prefWidth="226.0" AnchorPane.bottomAnchor="148.0" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="51.0">
+                     <children>
+                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="125.0" text="Piège" VBox.vgrow="ALWAYS" />
+                        <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                        <HBox prefHeight="139.0" prefWidth="226.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <AnchorPane prefHeight="121.0" prefWidth="226.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <ComboBox fx:id="nbTeleport" layoutX="124.0" layoutY="30.0" prefHeight="25.0" prefWidth="101.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="124.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0" />
+                                    <Label layoutY="34.0" prefHeight="17.0" prefWidth="95.0" text="Teleport Trap" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="123.0" AnchorPane.topAnchor="34.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox alignment="CENTER" layoutX="72.0" layoutY="45.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="150.0" AnchorPane.bottomAnchor="103.0" AnchorPane.leftAnchor="72.0" AnchorPane.rightAnchor="74.0" AnchorPane.topAnchor="45.0">
+                     <children>
+                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="39.0" text="Plateau" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                        <ComboBox fx:id="nbCouche" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="152.0" promptText="Nombre de couche" VBox.vgrow="ALWAYS" />
+                        <RadioButton fx:id="platC" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="0.0" prefWidth="150.0" text="Carré" VBox.vgrow="ALWAYS" />
+                        <RadioButton fx:id="platT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="17.0" prefWidth="100.0" text="Triangle" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+  </items>
+</SplitPane>
